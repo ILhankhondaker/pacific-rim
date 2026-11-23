@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && next dev",
-    "build": "node init && cross-env NODE_OPTIONS='--max-old-space-size=4096' next build",
-    "start": "node init && next start",
+    "dev": "next dev",
+    "build": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next build",
+    "start": "next start",
     "lint": "next lint",
-    "dev:trace": "node init && node --trace-deprecation node_modules/next/dist/bin/next dev"
+    "dev:trace": "node --trace-deprecation node_modules/next/dist/bin/next dev"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -76,3 +76,4 @@
     "typescript": "^5"
   }
 }
+
